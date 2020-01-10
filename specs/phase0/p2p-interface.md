@@ -398,12 +398,12 @@ Here, `result` represents the 1-byte response code.
 
 The token of the negotiated protocol ID specifies the type of encoding to be used for the req/resp interaction. Two values are possible at this time:
 
--  `ssz`: the contents are [SSZ-encoded](../simple-serialize.md). This encoding type MUST be supported by all clients. For objects containing a single field, only the field is SSZ-encoded not a container with a single field. For example, the `BeaconBlocksByRoot` request is an SSZ-encoded list of `Bytes32`'s.
+-  `ssz`: the contents are [SSZ-encoded](../../ssz/simple-serialize.md). This encoding type MUST be supported by all clients. For objects containing a single field, only the field is SSZ-encoded not a container with a single field. For example, the `BeaconBlocksByRoot` request is an SSZ-encoded list of `Bytes32`'s.
 -  `ssz_snappy`: The contents are SSZ-encoded and then compressed with [Snappy](https://github.com/google/snappy). MAY be supported in the interoperability testnet; MUST be supported in mainnet.
 
 #### SSZ-encoding strategy (with or without Snappy)
 
-The [SimpleSerialize (SSZ) specification](../simple-serialize.md) outlines how objects are SSZ-encoded. If the Snappy variant is selected, we feed the serialized form to the Snappy compressor on encoding. The inverse happens on decoding.
+The [SimpleSerialize (SSZ) specification](../../ssz/simple-serialize.md) outlines how objects are SSZ-encoded. If the Snappy variant is selected, we feed the serialized form to the Snappy compressor on encoding. The inverse happens on decoding.
 
 **Encoding-dependent header:** Req/Resp protocols using the `ssz` or `ssz_snappy` encoding strategies MUST prefix all encoded and compressed (if applicable) payloads with an unsigned [protobuf varint](https://developers.google.com/protocol-buffers/docs/encoding#varints).
 
