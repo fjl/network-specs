@@ -20,5 +20,5 @@ should ignore any additional list elements in `entry-value`.
 
 The initial version of the "eth" entry was proposed in [EIP-2124].
 
-[eth capability]: ../caps/eth.md
+[eth capability]: ../../execution/eth.md
 [EIP-2124]: https://eips.ethereum.org/EIPS/eip-2124

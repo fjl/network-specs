@@ -1,3 +1,7 @@
+---
+status: current
+---
+
 # Ethereum Wire Protocol (ETH)
 
 'eth' is a protocol on the [RLPx] transport that facilitates exchange of Ethereum
@@ -842,7 +846,7 @@ Version numbers below 60 were used during the Ethereum PoC development phase.
 [Block Access List Encoding]: #block-access-list-encoding
 [GetCells]: #getcells-0x14
 [Cells]: #cells-0x15
-[RLPx]: ../rlpx.md
+[RLPx]: ../transport/rlpx.md
 [EIP-155]: https://eips.ethereum.org/EIPS/eip-155
 [EIP-1559]: https://eips.ethereum.org/EIPS/eip-1559
 [EIP-2124]: https://eips.ethereum.org/EIPS/eip-2124
