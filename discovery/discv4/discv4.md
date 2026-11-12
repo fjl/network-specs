@@ -202,4 +202,4 @@ list elements in `packet-data`.
 [ENRResponse]: #enrresponse-packet-0x06
 [EIP-8]: https://eips.ethereum.org/EIPS/eip-8
 [EIP-868]: https://eips.ethereum.org/EIPS/eip-868
-[node record]: ./enr.md
+[node record]: ../enr.md
