@@ -14,6 +14,7 @@ the application-level protocols for consensus and execution.
 
 ### Transport
 
+- [libp2p](./transport/libp2p.md) -- the transport of the consensus layer.
 - [RLPx](./transport/rlpx.md) -- the legacy transport of the execution layer.
 
 ### Discovery
